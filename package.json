@@ -1,0 +1,23 @@
+{
+    "name": "base",
+    "version": "0.0.1",
+    "description": "The official release of the Proton IDE",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "electron ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ProtonIDE/base.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ProtonIDE/base/issues"
+    },
+    "homepage": "https://github.com/ProtonIDE/base#readme",
+    "devDependencies": {
+        "electron": "^22.1.0"
+    }
+}
