@@ -1,7 +1,11 @@
 body {
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+p, span {
+  font-size: 15px;
 }
 
 .sidebar {
@@ -44,4 +48,31 @@ body {
   transform: translate(75vw, 95vh);
   position: fixed;
   font-size: 10px;
+  z-index: 100000;
 }
+
+.editor {
+  display: inline-flex;
+  gap: 10px;
+  font-family: monospace;
+  line-height: 18px;
+  border-radius: 2px;
+  padding: 20px 10px;
+}
+
+.line-numbers {
+  width: 14px;
+  text-align: right;
+  z-index:9999;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(3.5rem)
+}
+
+.line-numbers span {
+  counter-increment: linenumber;
+  font-size: 15px
+}
+
+
+

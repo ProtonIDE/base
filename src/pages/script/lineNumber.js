@@ -1,26 +1,15 @@
 const textarea = document.querySelector('#code')
 const lineNumbers = document.querySelector('.line-numbers')
-var lineCount = 0
+var number = 0
 
 textarea.addEventListener('keyup', event => {
-  for (let i = 1; i < textarea.value.length; i++) {
-    if (lineCount[i] == '\n') {
-      lineCount++
-      const numberOfLines = event.target.value.split('\n').length
-    }
+  lineNumbers.innerHTML = ''
+  const numberOfLines = event.target.value.split('\n').length
+  for (var i = 1; i < numberOfLines; ++i) {
+    var d = document.createElement('span')
+    d.innerText = i
+    lineNumbers.append(d)
   }
-
-  var count = 0
-  var a = document.getElementById('code')
-  for (let i = 0; i < a.value.length; i++) {
-    if (a[i] == '\n') {
-      count++
-      lineNumbers.innerHTML = Array(numberOfLines)
-        .fill('<span>' + count + '</span>')
-        .join('')
-    }
-  }
-  console.log(count)
 })
 
 textarea.addEventListener('keydown', event => {

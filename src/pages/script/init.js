@@ -1,2 +1,2 @@
 // init
-theme.dracula('sans-serif')
+theme.standardDark('sans-serif')
