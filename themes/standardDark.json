@@ -3,12 +3,12 @@
   "textColor": "#ffffff",
   "darkColor": "#1a1a1a",
   "syntaxHighlight": {
-    "javascript": {},
-    "python": {},
-    "html": {},
-    "css": {}
+    "comment": "#234f24",
+    "string": "#d3b5e8",
+    "variable": "#8050a1",
+    "function": "#50a192"
   },
-  "name":"Standard Dark",
+  "name": "Standard Dark",
   "author": "Kevin Alavik",
   "url": "https://raw.githubusercontent.com/ProtonIDE/base/main/themes/standardDark.json"
 }

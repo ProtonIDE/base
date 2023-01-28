@@ -3,20 +3,12 @@
   "textColor": "#44475a",
   "darkColor": "#f8f8f2",
   "syntaxHighlight": {
-    "javascript": {
-      "comment": "#6272a4"
-    },
-    "python": {
-      "comment": "#6272a4"
-    },
-    "html": {
-      "comment": "#6272a4"
-    },
-    "css": {
-      "comment": "#6272a4"
-    }
-  },
+    "comment": "#6272a4",
+    "string":"",
+    "variable":"",  
+    "function": ""
+},
   "name": "Dracula",
   "author": "Kevin Alavik",
-  "url": "https://raw.githubusercontent.com/ProtonIDE/base/main/themes/standardDark.json"
+  "url": "https://raw.githubusercontent.com/ProtonIDE/base/main/themes/dracula.json"
 }

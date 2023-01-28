@@ -8,6 +8,14 @@ body {
 .sidebar {
     border: 1px solid red; 
     height: 99.5vh;
-    width: 10vw;
+    width: 3.5rem;
     display: flex;
+    position: relative;
+}
+
+.code {
+    border: 1px solid green;
+    height: 99.5vh;
+    width: 100vw;
+    position: absolute;
 }
