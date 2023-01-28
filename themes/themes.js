@@ -23,10 +23,6 @@ contextBridge.exposeInMainWorld("theme", {
     document.body.style.color = draculaTheme.textColor;
     document.body.style.fontFamily = font;
     sideBar.style.backgroundColor = draculaTheme.darkColor;
-    themeInfo.innerText =
-      "Theme: " +
-      draculaTheme.name +
-      " Made by: " +
-      draculaTheme.author;
+    themeInfo.innerText ="Theme: " + draculaTheme.name + " Made by: " + draculaTheme.author;
   },
 });
