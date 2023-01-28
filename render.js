@@ -2,11 +2,14 @@ const { app, BrowserWindow } = require("electron");
 const proton = require("./ide.json");
 const path = require("path");
 
+
 const createWindow = () => {
   const win = new BrowserWindow({
     webPreferences: {
       nodeIntegration: false,
       preload: path.join(__dirname, "preload.js"),
+      preload: path.join(__dirname, "/themes/themes.js"),
+      sandbox: false,
     },
     width: 900,
     height: 700,

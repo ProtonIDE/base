@@ -8,12 +8,14 @@
   <link rel="stylesheet" href="style/main.css">
 </head>
 <body class="index">
-  <h1>This is a h1 text!</h1>
-  <p>And this is a p text!</p>
-  <p id="codeJS">var fakeCode = "this is some fake code, to text highlighting"</p>
-  <!-- <button onclick="proton.openFile()">Open File</button> -->
-  <button onclick="">Standard Dark Theme</button>
-  <button>Dracula Theme</button>
-  <script type="module" src="script/main.js"></script>
+  <div class="sidebar" id="sideBar">
+    <p>P</p>
+  </div>
+  <div class="code">
+    <p>This is some code</p>
+    <p>This is also <strong>code</strong></p>
+  </div>
+  <p id="themeInfo"></p>
+  <script type="module" src="script/main.js">theme.standardDark("sans-serif")</script>
 </body>
 </html>
