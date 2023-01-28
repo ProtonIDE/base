@@ -1,0 +1,10 @@
+{
+  "backgroundColor": "#ffffff",
+  "textColor": "#1f1f1f",
+  "syntaxHighlight": {
+    "javascript": {},
+    "python": {},
+    "html": {},
+    "css": {}
+  }
+}
