@@ -1,1 +1,0 @@
-theme.standardDark("sans-serif");

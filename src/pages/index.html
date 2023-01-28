@@ -16,19 +16,20 @@
       <i id="icon" class="fi fi-rr-file"></i>
       <i id="icon" class="fi fi-rr-terminal"></i>
     </div>
-    <div class="fileTree" id="fileTree">
-      <p>index.html</p>
-    </div>
+    <div class="editor">
+      <div class="line-numbers">
+      </div>
 
-    <div class="code">
-      <p id="string">This is a string</p>
-      <p id="vari">This is a variable</p>
-      <p id="func">This is a function</p>
-      <p id="cmnt">This is a comment</p>
-      <button onclick="theme.standardDark('sans-serif')">Standard</button>
-      <button onclick="theme.dracula('sans-serif')">Dracula</button>
+      <textarea
+        class="code"
+        name="code"
+        id="code"
+        cols="30"
+        rows="10"
+      ></textarea>
     </div>
     <p id="themeInfo" class="themeInfo"></p>
-    <script type="module" src="script/main.js"></script>
+    <script src="script/init.js"></script>
+    <script src="script/lineNumber.js"></script>
   </body>
 </html>
