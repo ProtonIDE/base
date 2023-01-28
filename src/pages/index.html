@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title id="titleText">Proton</title>
-  <link rel="stylesheet" href="style/main.css">
-</head>
-<body class="index">
-  <div class="sidebar" id="sideBar">
-    <p>P</p>
-  </div>
-  <div class="code">
-    <p id="string">This is a string</p>
-    <p id="vari">This is a variable</p>
-    <p id="func">This is a function</p>
-    <p id="cmnt">This is a comment</p>
-  </div>
-  <p id="themeInfo"></p>
-  <script type="module" src="script/main.js">theme.standardDark("sans-serif")</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title id="titleText">Proton</title>
+    <link rel="stylesheet" href="style/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+  </head>
+  <body class="index">
+    <div class="sidebar" id="sideBar">
+      <i id="icon" class="fi fi-rr-file"></i>
+      <i id="icon" class="fi fi-rr-terminal"></i>
+    </div>
+    <div class="fileTree" id="fileTree">
+      <p>index.html</p>
+    </div>
+
+    <div class="code">
+      <p id="string">This is a string</p>
+      <p id="vari">This is a variable</p>
+      <p id="func">This is a function</p>
+      <p id="cmnt">This is a comment</p>
+      <button onclick="theme.standardDark('sans-serif')">Standard</button>
+      <button onclick="theme.dracula('sans-serif')">Dracula</button>
+    </div>
+    <p id="themeInfo" class="themeInfo"></p>
+    <script type="module" src="script/main.js"></script>
+  </body>
 </html>

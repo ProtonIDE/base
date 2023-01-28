@@ -2,7 +2,6 @@ const { app, BrowserWindow } = require("electron");
 const proton = require("./ide.json");
 const path = require("path");
 
-
 const createWindow = () => {
   const win = new BrowserWindow({
     webPreferences: {
@@ -13,6 +12,8 @@ const createWindow = () => {
     },
     width: 900,
     height: 700,
+    minHeight: 700,
+    minWidth: 900,
   });
 
   win.loadFile("src/pages/index.html");

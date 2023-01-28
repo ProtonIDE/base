@@ -6,16 +6,42 @@ body {
 
 
 .sidebar {
-    border: 1px solid red; 
     height: 99.5vh;
     width: 3.5rem;
     display: flex;
-    position: relative;
+    position: fixed;
+    align-items: center;  
+    padding-top: 1rem;
+    flex-direction: column;
+}
+
+.sidebar > #icon {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+
+.fileTree {
+    border: 1px solid #ccc;
+    height: 99.5vh;
+    width: 5rem;
+    transform: translateX(3.5rem);
+    resize: horizontal;
+    position: fixed;
 }
 
 .code {
-    border: 1px solid green;
+    border: 1px solid green
     height: 99.5vh;
-    width: 100vw;
-    position: absolute;
+    width: 91.25vw;
+    position: fixed;
+    margin-left: 3.5rem;
+    padding: 10px;
+    padding-left: 2rem;
+}
+
+.themeInfo {
+    transform: translate(75vw, 95vh);
+    position: fixed;
+    font-size: 10px;
 }
